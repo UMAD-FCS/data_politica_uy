@@ -1,1 +1,1 @@
-# data_politica_uy
+# Datos e información política de Uruguay
