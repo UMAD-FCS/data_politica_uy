@@ -1,0 +1,7 @@
+name: "Módulo de datos políticos"
+navbar:
+  title: "Módulo de datos políticos"
+  left:
+    - text: ""
+      href: index.html
+output_dir: "docs"
