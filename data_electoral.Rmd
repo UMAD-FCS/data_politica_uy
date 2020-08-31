@@ -33,8 +33,11 @@ library(tidyverse)
 
 <br />
     <br />
-        
-## Cronograma electoral de Uruguay 1918-1919
+    
+
+## Elecciones Nacionales 1922-2019 {.tabset .tabset-fade .tabset-pills}
+
+### Cronograma electoral de Uruguay 1918-1919 
 ```{r}
 
 DT::datatable(resumen_elecciones_uy(tabla = T), 
@@ -49,8 +52,8 @@ grafico_elecciones_uy()
  <br />
       <br />
           
-          
-## Base de datos con resultados de elecciones nacionales
+### Base de datos elecciones nacionales 
+
 
 ```{r}
 
@@ -89,7 +92,7 @@ DT::datatable(data_pres,
   <br />
     <br />
     
-## Elección presidencial 1922
+### Elección presidencial 1922
 ```{r}
 e22 %>%
 kbl() %>%
@@ -97,7 +100,7 @@ kable_paper("hover", full_width = F)
 ```
 
 
-### Por departamento
+#### Por departamento
 
 ```{r}
 
@@ -127,7 +130,7 @@ ggplot(data = e22d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
     
-## Elección presidencial 1926
+### Elección presidencial 1926
 
 ```{r}
 e26 %>%
@@ -135,7 +138,7 @@ kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 
 ```{r}
 
@@ -164,7 +167,7 @@ ggplot(data = e26d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
 
-## Elección presidencial 1930
+### Elección presidencial 1930
 
 ```{r}
 e30 %>%
@@ -172,7 +175,7 @@ kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 
 ```{r}
 
@@ -201,14 +204,14 @@ ggplot(data = e30d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
 
-## Elección presidencial 1938
+### Elección presidencial 1938
 ```{r}
 e38 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 
 e38d <- nacional_uy(1938, por_departamento = TRUE)
@@ -236,14 +239,14 @@ ggplot(data = e38d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
     
-## Elección presidencial 1942
+### Elección presidencial 1942
 ```{r}
 e42 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 
 e42d <- nacional_uy(1942, por_departamento = TRUE)
@@ -271,14 +274,14 @@ ggplot(data = e42d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
 
-## Elección presidencial 1946
+### Elección presidencial 1946
 ```{r}
 e46 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 
 e46d <- nacional_uy(1946, por_departamento = TRUE)
@@ -307,14 +310,14 @@ ggplot(data = e46d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
 
-## Elección presidencial 1950
+### Elección presidencial 1950
 ```{r}
 e50 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 
 e50d <- nacional_uy(1950, por_departamento = TRUE)
@@ -343,14 +346,14 @@ ggplot(data = e50d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-## Elección presidencial 1954
+### Elección presidencial 1954
 ```{r}
 e54 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 
 
@@ -381,14 +384,14 @@ ggplot(data = e54d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
     
-## Elección presidencial 1958
+### Elección presidencial 1958
 ```{r}
 e58 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 
 e58d <- nacional_uy(1958, por_departamento = TRUE)
@@ -418,14 +421,14 @@ ggplot(data = e58d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     
     
 
-## Elección presidencial 1966
+### Elección presidencial 1966
 ```{r}
 e66 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 
 e66d <- nacional_uy(1966, por_departamento = TRUE)
@@ -455,14 +458,14 @@ ggplot(data = e66d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-## Elección presidencial 1971
+### Elección presidencial 1971
 ```{r}
 e71 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 
 e71d <- nacional_uy(1971, por_departamento = TRUE)
@@ -491,14 +494,14 @@ ggplot(data = e71d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-## Elección presidencial 1984
+### Elección presidencial 1984
 ```{r}
 e84 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 
 e84d <- nacional_uy(1984, por_departamento = TRUE)
@@ -528,14 +531,14 @@ ggplot(data = e84d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-## Elección presidencial 1989
+### Elección presidencial 1989
 ```{r}
 e89 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 e89d <- nacional_uy(1989, por_departamento = TRUE)
 
@@ -563,14 +566,14 @@ ggplot(data = e89d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-## Elección presidencial 1994
+### Elección presidencial 1994
 ```{r}
 e94 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 e94d <- nacional_uy(1994, por_departamento = TRUE)
 
@@ -598,14 +601,14 @@ ggplot(data = e94d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
 
-## Elección presidencial 1999
+### Elección presidencial 1999
 ```{r}
 e99 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 e99d <- nacional_uy(1999, por_departamento = TRUE)
 
@@ -633,14 +636,14 @@ ggplot(data = e99d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-## Elección presidencial 2004
+### Elección presidencial 2004
 ```{r}
 e04 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 e04d <- nacional_uy(2004, por_departamento = TRUE)
 
@@ -668,14 +671,14 @@ ggplot(data = e04d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-## Elección presidencial 2009
+### Elección presidencial 2009
 ```{r}
 e09 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 e09d <- nacional_uy(2009, por_departamento = TRUE)
 
@@ -703,14 +706,14 @@ ggplot(data = e09d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-## Elección presidencial 2014
+### Elección presidencial 2014
 ```{r}
 e14 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 e14d <- nacional_uy(2014, por_departamento = TRUE)
 
@@ -738,14 +741,14 @@ ggplot(data = e14d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-## Elección presidencial 2019
+### Elección presidencial 2019
 ```{r}
 e19 %>%
 kbl() %>%
 kable_paper("hover", full_width = F)
 ```
 
-### Por departamento
+#### Por departamento
 ```{r}
 e19d <- nacional_uy(2019, por_departamento = TRUE)
 
@@ -768,3 +771,18 @@ ggplot(data = e19d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
           legend.position = "none") +
     facet_wrap(~Departamento)
 ```
+
+
+## Elecciones departamentales {.tabset .tabset-fade .tabset-pills}
+
+
+
+## Indicadores electorales {.tabset .tabset-fade .tabset-pills}
+ 
+### Evolución Partidos Políticos
+
+### Volatilidad
+
+### Número Efectivo de Partidos
+
+
