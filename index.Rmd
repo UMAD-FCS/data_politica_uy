@@ -97,7 +97,7 @@ DT::datatable(data_pres,
 ## Elecciones Nacionales {.tabset .tabset-fade .tabset-pills} 
   
     
-### Elección presidencial 1922
+### 1922
 ```{r}
 e22 %>%
 kbl() %>%
@@ -141,7 +141,7 @@ ggplot(data = e22d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
        <br />
     
-### Elección presidencial 1926
+### 1926
 
 ```{r}
 e26 %>%
@@ -178,7 +178,7 @@ ggplot(data = e26d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
        <br />
 
-### Elección presidencial 1930
+### 1930
 
 ```{r}
 e30 %>%
@@ -215,7 +215,7 @@ ggplot(data = e30d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
 
-### Elección presidencial 1938
+### 1938
 ```{r}
 e38 %>%
 kbl() %>%
@@ -250,7 +250,7 @@ ggplot(data = e38d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
     
-### Elección presidencial 1942
+### 1942
 ```{r}
 e42 %>%
 kbl() %>%
@@ -285,7 +285,7 @@ ggplot(data = e42d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
 
-### Elección presidencial 1946
+### 1946
 ```{r}
 e46 %>%
 kbl() %>%
@@ -321,7 +321,7 @@ ggplot(data = e46d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
 
-### Elección presidencial 1950
+### 1950
 ```{r}
 e50 %>%
 kbl() %>%
@@ -357,7 +357,7 @@ ggplot(data = e50d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-### Elección presidencial 1954
+### 1954
 ```{r}
 e54 %>%
 kbl() %>%
@@ -395,7 +395,7 @@ ggplot(data = e54d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
  <br />
     <br />
     
-### Elección presidencial 1958
+### 1958
 ```{r}
 e58 %>%
 kbl() %>%
@@ -432,7 +432,7 @@ ggplot(data = e58d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     
     
 
-### Elección presidencial 1966
+### 1966
 ```{r}
 e66 %>%
 kbl() %>%
@@ -469,7 +469,7 @@ ggplot(data = e66d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-### Elección presidencial 1971
+### 1971
 ```{r}
 e71 %>%
 kbl() %>%
@@ -505,7 +505,7 @@ ggplot(data = e71d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-### Elección presidencial 1984
+### 1984
 ```{r}
 e84 %>%
 kbl() %>%
@@ -542,7 +542,7 @@ ggplot(data = e84d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-### Elección presidencial 1989
+### 1989
 ```{r}
 e89 %>%
 kbl() %>%
@@ -577,7 +577,7 @@ ggplot(data = e89d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-### Elección presidencial 1994
+### 1994
 ```{r}
 e94 %>%
 kbl() %>%
@@ -612,7 +612,7 @@ ggplot(data = e94d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
 
-### Elección presidencial 1999
+### 1999
 ```{r}
 e99 %>%
 kbl() %>%
@@ -647,7 +647,7 @@ ggplot(data = e99d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-### Elección presidencial 2004
+### 2004
 ```{r}
 e04 %>%
 kbl() %>%
@@ -682,7 +682,7 @@ ggplot(data = e04d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-### Elección presidencial 2009
+### 2009
 ```{r}
 e09 %>%
 kbl() %>%
@@ -717,7 +717,7 @@ ggplot(data = e09d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-### Elección presidencial 2014
+### 2014
 ```{r}
 e14 %>%
 kbl() %>%
@@ -752,7 +752,7 @@ ggplot(data = e14d , aes(x = reorder(Sigla, Porcentaje), y = Porcentaje)) +
     <br />
     
     
-### Elección presidencial 2019
+### 2019
 ```{r}
 e19 %>%
 kbl() %>%

@@ -4,8 +4,4 @@ navbar:
   left:
     - text: ""
       href: index.html
-output:
-  html_document:
-    theme: Spacelab
-    highlight: textmate      
 output_dir: "docs"
