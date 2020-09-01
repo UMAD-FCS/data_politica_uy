@@ -26,8 +26,8 @@ elec <- elecciones_uy %>%
     deframe()
 
 for(i in 1:length(elec)) { 
-    nam <- paste0("e_", elec[i])
-    assign(nam, nacional_uy(eleccion = elec[i]))
+    bor <- paste0("e_", elec[i])
+    assign(bor, nacional_uy(eleccion = elec[i]))
 }
 e_1930$Diputados <- 0
 e_1930$Senadores <- 0
@@ -44,8 +44,8 @@ elecd <- elecciones_uy %>%
     deframe()
 
 for(i in 1:length(elecd)) { 
-    nam <- paste0("e_",elec[i], "d")
-    assign(nam, nacional_uy(eleccion = elec[i], por_departamento = TRUE))
+    bor <- paste0("e_",elec[i], "d")
+    assign(bor, nacional_uy(eleccion = elec[i], por_departamento = TRUE))
 }
 
 meses <- function(m){
